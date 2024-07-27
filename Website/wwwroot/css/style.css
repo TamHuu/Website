@@ -215,7 +215,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-color: #0e0c06;
+    background-color: #fff;
     height: auto;
     background-size: 100%;
 }
@@ -241,7 +241,7 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0px 20px;
     font-size: 17px;
-    color: #fefefd;
+    color: black;
     margin: 0px 5px;
 }
 
@@ -302,8 +302,8 @@ button {
     background-image: url(https://hyundaitayninh.vn/wp-content/uploads/2024/07/fb7440b9-bb67-4494-8f98-517403f00f4f.jpg);
     height: auto;
     background-size: 100%;
-    padding: 200px 0px 160px 0px;
-    background-repeat:no-repeat
+    padding: 400px 0px 160px 0px;
+    background-repeat:no-repeat;
 }
 
 .banner_taital_main {
