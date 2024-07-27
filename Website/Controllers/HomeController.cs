@@ -6,6 +6,7 @@ namespace Website.Controllers
 {
     public class HomeController : Controller
     {
+        QuanLyBanXeContext db = new QuanLyBanXeContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,6 +16,8 @@ namespace Website.Controllers
 
         public IActionResult Index()
         {
+            var lstsanpham = db.Customers.ToList();
+            ViewData["Ten"]= lstsanpham;
             return View();
         }
 

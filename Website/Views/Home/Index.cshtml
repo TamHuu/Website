@@ -1,7 +1,9 @@
 ﻿@{
+    List<Customer> data = (List<Customer>) (ViewData["Ten"] ?? new ());
     ViewData["Title"] = "Home Page";
-}
 
+}
+@model List<Customer>
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,7 +118,14 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 </head>
 <body>
-
+<div>
+         @foreach (var item in data)
+        {
+            <span>@item.Address</span>
+            <span>@item.Name</span>
+            <span>@item.Email</span>
+        } 
+</div>
     <!-- header section start -->
     <div class="header_section">
         <div class="container">
