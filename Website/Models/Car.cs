@@ -20,6 +20,8 @@ public partial class Car
     public int? Mileage { get; set; }
 
     public string? Description { get; set; }
+    public string? Image { get; set; }
+    public string? CarType { get; set; }
 
     public virtual ICollection<Inventory> Inventories { get; set; } = new List<Inventory>();
 

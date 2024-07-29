@@ -16,8 +16,9 @@ namespace Website.Controllers
 
         public IActionResult Index()
         {
-            var lstsanpham = db.Customers.ToList();
-            ViewData["Ten"]= lstsanpham;
+            var lstCar = db.Cars.ToList();
+            ViewData["DanhSachXe"]= lstCar;
+            
             return View();
         }
 
